@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>background-origin</title>
+	<style type="text/css">
+		.test1{
+			width: 220px;
+			padding: 20px;
+			border:20px dashed #000;
+			font-weight: bold;
+			background:#ccc url(http://static.mukewang.com/static/img/logo_index.png) no-repeat;
+			position: relative;
+			background-origin: content-box;    /*padding-box | border-box*/
+		}
+		.test1 span{
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		.content{
+			height: 80px;
+			border:1px solid #000;
+			/*background:#ccc url(http://static.mukewang.com/static/img/logo_index.png) no-repeat;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="test1">
+		<span>padding</span>
+		<div class="content">content</div>
+	</div>
+</body>
+</html>
