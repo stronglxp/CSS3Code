@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3D导航栏</title>
+	<style type="text/css">
+		body{
+			background-color: #ebebeb;
+		}
+		.nav{
+			width: 500px;
+			height: 50px;
+			background-color: #f65f57;
+			font:bold 0/50px Arial;
+		  	text-align:center;
+		  	margin:40px auto 0;
+		  	/*制作圆*/
+		  	border-radius: 10px;
+		  	/*制作导航立体风格*/
+		  	box-shadow: 0 5px #585858;
+		}
+		.nav a{
+			display: inline-block;
+			transition: all 0.2s ease-in;
+			-webkit-transition:all 0.2s ease-in;
+			-moz-transition:all 0.2s ease-in;
+			-ms-transition:all 0.2s ease-in;
+			-o-transition:all 0.2s ease-in;
+		}
+		.nav a:hover{
+			transform: rotate(10deg);
+			-webkit-transform:rotate(10deg);
+			-moz-transform:rotate(10deg);
+			-ms-transform:rotate(10deg);
+			-o-transform:rotate(10deg);
+		}
+		.nav li{
+			position: relative;
+			display: inline-block;
+			padding:0 16px;
+			font-size: 13px;
+			text-shadow: 1px 2px 4px rgba(0,0,0,0.5);
+			list-style: none outside none;
+			float: left;
+			background:linear-gradient(to bottom,#585858,#585858) no-repeat right/1px 20px;  
+			/* position/bg-size 1px为线宽度 20px为线高度*/
+		}
+		.nav li:last-child{
+			background:none;
+		}
+		.nav a,.nav a:hover{
+			text-decoration: none;
+			color:#fff;
+		}
+	</style>
+</head>
+<body>
+	<ul class="nav">
+		<li><a href="">Home</a></li>
+		<li><a href="">About Me</a></li>
+		<li><a href="">Profile</a></li>
+		<li><a href="">Blog</a></li>
+		<li><a href="">Resourse</a></li>
+		<li><a href="">Contact Me</a></li>
+	</ul>
+</body>
+</html>
