@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>:first-of-type选择器</title>
+	<style type="text/css">
+		.wrapper{
+			width: 500px;
+			margin:10px auto;
+			padding: 10px;
+			border:1px solid #ccc;
+		}
+		.wrapper p,.wrapper div{
+			margin:10px 0;
+			padding: 10px;
+			background-color: orange;
+			color:#fff;
+		}
+		.wrapper div:first-of-type{
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+	  <p>我是第一个段落</p>
+	  <p>我是第二个段落</p>
+	  <div>我是第一个Div元素</div>
+	  <div>我是第二个Div元素</div>
+	  <p>我是第三个段落</p>
+	  <p>我是第四个段落</p>
+	  <div>我是第三个Div元素</div>
+	  <div>我是第四个Div元素</div>
+	</div>
+</body>
+</html>
