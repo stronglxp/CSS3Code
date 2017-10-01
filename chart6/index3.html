@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>:not选择器</title>
+	<style type="text/css">
+		div{
+			padding: 10px 20px;
+			min-height: 30px;
+		}
+		div:not([id='footer']){
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">页头</div>
+	<div id="page">页体</div>
+	<div id="footer">页脚</div>
+</body>
+</html>
