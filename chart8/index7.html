@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>transition</title>
+	<style type="text/css">
+		div.div1{
+			width: 200px;
+			  height: 200px;
+			  background: red;
+			  margin: 20px auto;
+			-webkit-transition-property: width;
+		  transition-property: width;
+		  -webkit-transition-duration:.5s;
+		  transition-duration:.5s;
+		  -webkit-transition-timing-function: ease-in;
+		  transition-timing-function: ease-in;
+		  -webkit-transition-delay: .18s;
+		  	transition-delay:.18s;
+		}
+		div.div1:hover {
+		  width: 400px;
+		}
+		div.div2{
+			width: 300px;
+			  height: 200px;
+			  background-color: orange;
+			  margin: 20px auto;
+			-webkit-transition-property: height;
+			  transition-property: height;
+			  -webkit-transition-duration: 1s;
+			  transition-duration: 1s;
+			  -webkit-transition-timing-function: ease-out;
+			  transition-timing-function: ease-out;
+			  -webkit-transition-delay: .2s;
+			  transition-delay: .2s;
+		}
+		div.div2:hover{
+			width: 100px;
+		}
+		div.div3{
+			width: 200px;
+			  height: 200px;
+			  background-color: orange;
+			  margin: 20px auto;
+			border-radius: 100%;
+			  -webkit-transition-property: -webkit-border-radius;
+			  transition-property: border-radius;
+			  -webkit-transition-duration: 1s;
+			  transition-duration: 1s;
+			  -webkit-transition-timing-function:linear;
+			  transition-timing-function:linear;
+			  -webkit-transition-delay: .2s;
+			  transition-delay: .2s;
+		}
+		div.div3:hover{
+			border-radius: 0;
+		}
+		div.div4{
+			width: 400px;
+			  height: 200px;
+			  margin: 20px auto;
+			  border: 2px dotted red;
+			  position:relative;
+		}
+		div.div4 div{
+			padding: 15px 20px;
+			  color: #fff;
+			  background-color: orange;
+			  position: absolute;
+			  top: 50%;
+			  left:50%;
+			  -webkit-transform: translate(-50%,-50%);
+			  transform: translate(-50%,-50%);
+			  -webkit-transition: all 0.5s ease-in 0.2s;
+			  transition: all 0.5s ease-in 0.2s;
+		}
+		div.div4 div:hover{
+			background-color: red;
+  			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<div class="div2"></div>
+	<div class="div3"></div>
+	<div class="div4">
+		<div>鼠标放我身上</div>
+	</div>
+</body>
+</html>
