@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rotate</title>
+	<style type="text/css">
+		.wrap{
+			width: 500px;
+			height: 200px;
+			margin:100px auto;
+			border:2px dotted #ccc;
+		}
+		.wrap div{
+			width: 500px;
+			height: 200px;
+			text-align: center;
+			line-height: 200px;
+			color:#fff;
+			background-color: green;
+			-webkit-transform:rotate(-20deg);
+			-moz-transform:rotate(-20deg);
+			-ms-transform:rotate(-20deg);
+			-o-transform:rotate(-20deg);
+			transform: rotate(-20deg);
+		}
+		 span{
+			display: block;    /*先转为块状元素*/
+			-webkit-transform:rotate(20deg);
+			-moz-transform:rotate(20deg);
+			-ms-transform:rotate(20deg);
+			-o-transform:rotate(20deg);
+			transform: rotate(20deg);
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div>
+			<span>我不想旋转</span>
+		</div>
+	</div>
+</body>
+</html>
