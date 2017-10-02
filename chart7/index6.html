@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>:read-write选择器</title>
+	<style type="text/css">
+		form{
+			width: 300px;
+			margin:30px auto;
+			padding: 20px;
+			border:1px solid #ccc;
+		}
+		form>div{
+			margin-bottom: 10px;
+		}
+		input[type='text']{
+			border:1px solid orange;
+			padding: 5px;
+			border-radius: 5px;
+			background-color: #fff;
+		}
+		input[type='text']:read-write{
+			border:2px solid red;
+		}
+		input[type='text']:-moz-read-write{
+			border:2px solid red;
+		}
+		input[type='text']:read-only{
+			border-color: #ccc;
+		}
+		input[type='text']:-moz-read-only{
+			border-color: #ccc;
+		}
+	</style>
+</head>
+<body>
+	<form action="#">
+		<div>
+			<label for="name">姓名：</label>
+			<input type="text" name="name" placeholder="CodeTiger">
+		</div>
+		<div>
+			<label for="address">地址：</label>
+			<input type="text" name="address" placeholder="江苏南京" readonly="readonly">
+		</div>
+	</form>
+</body>
+</html>
