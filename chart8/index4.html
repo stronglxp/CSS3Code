@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>translate</title>
+	<style type="text/css">
+		.wrap{
+			padding: 20px;
+			background-color: orange;
+			color:#fff;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			/*1. top：50%，left：50%，是将色块的左上角定位在了屏幕的中央，但是，整体并不在中央；
+
+			2. translate的百分比是根据自身的宽度和高度来定的，translate(-50%,-50%) 配合 top：50%，left：50% 实现了居中*/
+			-webkit-transform:translate(-50%,-50%);
+			-moz-transform:translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		我不知道我的宽度和高是多少，我要实现水平垂直居中 
+	</div>
+</body>
+</html>
