@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>scale</title>
+	<style type="text/css">
+		.wrap{
+			width: 200px;
+			height: 200px;
+			border:1px dotted #ccc;
+			margin:100px auto;
+		}
+		.wrap div{
+			width: 200px;
+			height: 200px;
+			text-align: center;
+			line-height: 200px;
+			background-color: orange;
+			color: #fff;
+		}
+		.wrap div:hover{
+			opacity: 0.5;
+			-webkit-transform:scale(0.8);
+			-moz-transform:scale(0.8);
+			-ms-transform:scale(0.8);
+			-o-transform:scale(0.8);
+			transform: scale(0.8);
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div>我将缩小0.8</div>
+	</div>
+</body>
+</html>
