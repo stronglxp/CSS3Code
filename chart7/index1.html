@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>:enabled选择器</title>
+	<style type="text/css">
+		div{
+			margin: 20px;
+		}
+		input[type='text']:enabled{
+			border: 1px solid #f36;
+  			box-shadow: 0 0 5px #f36;
+		}
+		input[type='text']:disabled{
+			box-shadow: none;
+		}
+	</style>
+</head>
+<body>
+	<form action="#">
+		<div>
+			<label>可用选择框:</label>
+			<input type="text" name="name1" id="name1">
+		</div>
+		<div>
+			<label>禁用选择器:</label>
+			<input type="text" name="name2" id="name2" disabled="disabled">
+		</div>
+	</form>
+</body>
+</html>
