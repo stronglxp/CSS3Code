@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>transform-origin</title>
+	<style type="text/css">
+		.wrapper {
+		  width: 400px;
+		  height: 100px;
+		  border: 2px dotted red;
+		  margin: 20px auto; 
+		  text-align: center;
+		  line-height: 100px;
+		}
+		.wrapper div {
+		  background: orange;
+		  color: #fff;
+		  -webkit-transform: skew(15deg);
+		  -moz-transform: skew(15deg);
+		  transform: skew(15deg);
+		  -webkit-transform-origin: top right;
+		  -moz-transform-origin: top right;
+		  transform-origin: top right;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+  		<div>我修改原点之后在进行15度的扭曲</div>
+	</div>
+</body>
+</html>
