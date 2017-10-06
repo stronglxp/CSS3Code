@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3中调用动画</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			border:1px solid orange;
+			margin:20px auto;
+		}
+		div span{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border-radius: 100%;
+			background-color: orange;
+			animation-name: around;
+			animation-duration: 2s;
+			animation-timing-function: ease;
+			animation-delay: .2s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes around{
+			0%{
+				transform: translate(0,0);
+			}
+			25%{
+				transform: translateX(180px);
+			}
+			50%{
+				transform: translate(180px,180px);
+			}
+			75%{
+				transform: translateY(180px);
+			}
+			100%{
+				transform: translate(0,0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div><span></span></div>
+</body>
+</html>
