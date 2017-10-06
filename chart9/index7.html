@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3中设置动画播放方向</title>
+	<style type="text/css">
+		@keyframes move {
+		  0%{
+		    transform: translateY(90px);
+		  }
+		  15%{
+		    transform: translate(90px,90px);
+		  }
+		  30%{
+		    transform: translate(180px,90px);
+		  }
+		  45%{
+		    transform: translate(90px,90px);
+		  }
+		  60%{
+		    transform: translate(90px,0);
+		  }
+		  75%{
+		    transform: translate(90px,90px);
+		  }
+		  90%{
+		    transform: translate(90px,180px);
+		  }
+		  100%{
+		    transform: translate(90px,90px);
+		  }
+		}
+
+		div {
+		  width: 200px;
+		  height: 200px;
+		  border: 1px solid red;
+		  margin: 20px auto;
+		}
+		span {
+		  display: inline-block;
+		  width: 20px;
+		  height: 20px;
+		  background: orange;
+		  transform: translateY(90px);
+		  animation-name: move;
+		  animation-duration: 10s;
+		  animation-timing-function: ease-in;
+		  animation-delay: .2s;
+		  animation-iteration-count:infinite;
+		  animation-direction:alternate;
+		}
+	</style>
+</head>
+<body>
+	<div><span></span></div>
+</body>
+</html>
