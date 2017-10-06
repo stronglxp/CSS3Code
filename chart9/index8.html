@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3中设置动画的播放状态</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			margin:20px auto;
+			border:1px solid orange;
+		}
+		div span{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: orange;
+			transform: translateY(90px);
+			  animation-name: move;
+			  animation-duration: 10s;
+			  animation-timing-function: ease-in;
+			  animation-delay: .2s;
+			  animation-iteration-count:infinite;
+			  animation-direction:alternate;
+			  animation-play-state:paused;
+		}
+		@keyframes move {
+		  0%{
+		    transform: translateY(90px);
+		  }
+		  15%{
+		    transform: translate(90px,90px);
+		  }
+		  30%{
+		    transform: translate(180px,90px);
+		  }
+		  45%{
+		    transform: translate(90px,90px);
+		  }
+		  60%{
+		    transform: translate(90px,0);
+		  }
+		  75%{
+		    transform: translate(90px,90px);
+		  }
+		  90%{
+		    transform: translate(90px,180px);
+		  }
+		  100%{
+		    transform: translate(90px,90px);
+		  }
+}
+div:hover span{
+		  	animation-play-state: running;
+		  }
+	</style>
+</head>
+<body>
+	<div><span></span></div>
+</body>
+</html>
