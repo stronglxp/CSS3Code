@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>@keyframes</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			color: #fff;
+			margin:20px auto;
+		}
+		div:hover{
+			animation: myhover 5s ease-in-out .2s;
+		}
+		@keyframes myhover{
+			0%{
+				background-color: red;
+			}
+			20%{
+			    background:blue;
+			}
+			40%{
+			    background:orange;
+			}
+			60%{
+			    background:green;
+			}
+			80%{
+			    background:yellow;
+			}
+			100%{
+			    background: red;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div>鼠标放我身上</div>
+</body>
+</html>
