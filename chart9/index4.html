@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3中设置动画播放方式</title>
+	<style type="text/css">
+		div{
+			width: 500px;
+			height: 200px;
+			margin:20px auto;
+			border: 1px solid red;
+		}
+		div span{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border-radius: 100%;
+			background-color: orange;
+			animation-name: roll;
+			animation-duration: 10s;
+			animation-timing-function: ease;
+			animation-delay: .1s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes roll{
+			0%{
+				transform: translate(0);
+			}
+			15%{
+				transform: translate(100px,180px);
+			}
+			30%{
+				transform: translate(200px,0);
+			}
+			50%{
+				transform: translate(250px,180px);
+			}
+			75%{
+				transform: translate(350px,0);
+			}
+			100%{
+				transform: translate(480px,180px);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div><span></span></div>
+</body>
+</html>
